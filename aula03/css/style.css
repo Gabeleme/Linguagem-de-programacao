@@ -1,0 +1,32 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  /* familia da fonte */
+}
+
+table {
+  border-collapse: collapse;
+  /* Remove os espaços entre as bordas */
+  width: 70%;
+  /* Define a largura da tabela */
+
+}
+
+th, td {
+  border: 1px solid black;
+  /* Borda das células */
+  padding: 5px 8px;
+  /* Espaçamento interno */
+  text-align: left;
+  /* Alinhamento à esquerda */
+}
+
+tfoot td {
+  text-align: left;
+  /* Alinhado à esquerda */
+  padding: 4px;
+  /* Reduz o padding do rodapé */
+}
+
+p{
+  background-color: rgba(0, 255, 255, 0.63);
+}
