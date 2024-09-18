@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Forms com atritbuto novalidate</title>
+</head>
+
+<body>
+    <h1>Formulario: </h1>
+    <form action="/processar" method="post">
+        <label>Nome: <input name="nome" placeholder="Digite seu nome completo" required></label> <!-- campo para nome -->
+        <label>Email: <input name="email" type="email" placeholder="Digite seu email"></label>  <!-- campo para email -->
+        <label>Mensagem: <textarea name=”mensagem” placeholder="Digite uma mensagem" required></textarea></label>  <!-- campo para mensagem -->
+        <input type=”submit” name=”action” value="Salvar rascunho" formnovalidate> <!-- botão para salvar -->
+        <input type=”submit” name=”action” value="Enviar"> <!-- botão para enviar-->
+
+        <!-- placeholder aparece a mensagem dentro da caixa dando dica ao usuario do que fazer -->
+        <!-- <label>: Usada para associar um rótulo a um campo de formulário. -->
+        <!-- <input>: Campo de entrada de texto para o nome -->
+        <!-- name=" ": Define o nome do campo que será enviado no formulário -->
+        <!-- required: Este campo é obrigatório e precisa ser preenchido -->
+    </form>
+    <br>
+    <details>
+        <summary>Copiando <progress max="39248" value="14718">37,5%</progress></summary>
+        <dl>
+            <dt>Tamanho total:</dt>
+            <dd>39.248KB</dd>
+            <dt>Transferido:</dt>
+            <dd>14.1718KB</dd>
+            <dt>Taxa de transfêrencia: </dt>
+            <dd>127KB/s</dd>
+            <dt>Nome do Arquivo: </dt>
+            <dd>HTML5.mp4</dd>
+        </dl>
+    </details>
+
+    <br>
+    <br>
+
+    <div contenteditable="true">
+        Edite-me
+    </div>
+</body>
+
+</html>

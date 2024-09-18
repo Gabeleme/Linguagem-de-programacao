@@ -1,0 +1,59 @@
+/* Estilo para o body */
+body {
+    font-family: Arial, sans-serif; /* Define a fonte padrão */
+    background-color: #f4f4f4; /* Cor de fundo clara */
+    color: #333; /* Cor do texto */
+    margin: 0; /* Remove a margem padrão */
+    padding: 0; /* Remove o padding padrão */
+    text-align: center; /* Centraliza o texto */
+}
+
+/* Estilo para o formulário */
+form {
+    background-color: #fff; /* Cor de fundo branca */
+    border: 1px solid #ddd; /* Borda cinza clara */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave ao redor */
+    display: inline-block; /* Faz o formulário ocupar apenas o espaço necessário */
+    padding: 20px; /* Espaçamento interno */
+    margin-top: 20px; /* Espaço acima do formulário */
+}
+
+/* Estilo para os rótulos do formulário */
+label {
+    display: block; /* Faz os rótulos ocuparem uma linha inteira */
+    margin-bottom: 10px; /* Espaço abaixo de cada rótulo */
+    font-weight: bold; /* Deixa o texto em negrito */
+}
+
+/* Estilo para o elemento <details> */
+details {
+    background-color: #fff; /* Cor de fundo branca */
+    border: 1px solid #ddd; /* Borda cinza clara */
+    border-radius: 8px; /* Bordas arredondadas */
+    padding: 10px; /* Espaçamento interno */
+    margin-top: 20px; /* Espaço acima do elemento */
+    display: inline-block; /* Faz o elemento ocupar apenas o espaço necessário */
+    text-align: left; /* Alinha o texto à esquerda */
+}
+
+summary {
+    font-weight: bold; /* Deixa o texto em negrito */
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+}
+
+/* Estilo para o div editável */
+/* É um seletor de atributo que especifica que o estilo deve ser aplicado apenas a <div>s que têm o atributo contenteditable com o valor true. */
+div[contenteditable="true"] {
+    border: 1px solid #ddd; /* Borda cinza clara */
+    border-radius: 8px; /* Bordas arredondadas */
+    padding: 10px; /* Espaçamento interno */
+    background-color: #fff; /* Cor de fundo branca */
+    display: inline-block; /* Faz o div ocupar apenas o espaço necessário */
+    margin-top: 20px; /* Espaço acima do div */
+    width: 300px; /* Largura fixa */
+    min-height: 100px; /* Altura mínima */
+}
+
+
+

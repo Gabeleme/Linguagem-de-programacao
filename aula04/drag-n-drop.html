@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Estilo para os elementos com IDs div1 e div2 */
+        #div1, #div2 {
+            width: 100px;
+            height: 100px;
+            padding: 10px;
+            border: 1px, solid #aaa;
+        }
+    </style>
+    <script>
+        // Função para permitir o arrasto e soltura de elementos
+        function allwDrop(ev) { //allwDrop(ev): Permite que o elemento seja soltado.
+            ev.preventDefault(); // Previne o comportamento padrão do evento para permitir arrastar e soltar
+        }
+        // Função chamada quando um elemento é arrastado
+        function drag(ev) {
+            ev.dataTransfer.setData("text", ev.target.id);  // Define os dados do arrasto com o ID do elemento arrastado
+        }
+        // Função chamada quando um elemento é solto
+        function drop(ev) {
+            ev.preventDefault(); // Previne o comportamento padrão do evento de soltura
+            var data = ev.dataTransfer.getData("text"); // Obtém o ID do elemento arrastado
+            ev.target.appendChild(document.getElementById(data)) // Adiciona o elemento arrastado ao contêiner onde foi solto
+        }
+    </script>
+    <title>Drag and Drop (Arraste e Solte)</title>
+</head>
+
+<body>
+    <div id="div1" ondrop="drop(event)" ondragover="allwDrop(event)"></div>
+    <br>
+    <img id="drag1" src="imagem/download.jpeg" draggable="true" ondragstart="drag(event)" width="100px" alt="cachorro">
+    <div id="div2" ondrop="drop(event)" ondragover="allwDrop(event)"></div>
+
+</body>
+
+</html>
