@@ -11,11 +11,32 @@
 <body>
     <h1>Formulario: </h1>
     <form action="/processar" method="post">
-        <label>Nome: <input name="nome" placeholder="Digite seu nome completo" required></label> <!-- campo para nome -->
-        <label>Email: <input name="email" type="email" placeholder="Digite seu email"></label>  <!-- campo para email -->
-        <label>Mensagem: <textarea name=”mensagem” placeholder="Digite uma mensagem" required></textarea></label>  <!-- campo para mensagem -->
-        <input type=”submit” name=”action” value="Salvar rascunho" formnovalidate> <!-- botão para salvar -->
-        <input type=”submit” name=”action” value="Enviar"> <!-- botão para enviar-->
+        <!-- Campo de entrada para nome -->
+        <label>Nome: <input name="nome" placeholder="Digite seu nome completo" required></label> 
+        <!-- name="nome": Nome do campo que será enviado ao servidor -->
+        <!-- placeholder: Texto de exemplo dentro do campo -->
+        <!-- required: O campo é obrigatório -->
+
+
+        <!-- Campo de entrada para email -->
+        <label>Email: <input name="email" type="email" placeholder="Digite seu email"></label> 
+        <!-- type="email": Especifica que o campo aceita apenas endereços de e-mail válidos -->
+
+
+       <!-- Campo de texto para a mensagem -->
+       <label>Mensagem: <textarea name="mensagem" placeholder="Digite uma mensagem" required></textarea></label>  
+       <!-- <textarea>: Cria uma área de texto maior para o usuário digitar uma mensagem -->
+       <!-- required: O campo é obrigatório -->
+
+
+       <!-- Botão para salvar rascunho sem validar os campos obrigatórios -->
+       <input type="submit" name="action" value="Salvar rascunho" formnovalidate> 
+       <!-- formnovalidate: Permite enviar o formulário sem validar os campos obrigatórios -->
+
+       
+       <!-- Botão para enviar o formulário -->
+       <input type="submit" name="action" value="Enviar"> 
+       <!-- Envia o formulário validando os campos obrigatórios -->
 
         <!-- placeholder aparece a mensagem dentro da caixa dando dica ao usuario do que fazer -->
         <!-- <label>: Usada para associar um rótulo a um campo de formulário. -->

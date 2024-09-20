@@ -13,7 +13,7 @@
             border: 1px, solid #aaa;
         }
     </style>
-    <script>
+    <script> // tag usada para iniciar um código JavaScript
         // Função para permitir o arrasto e soltura de elementos
         function allwDrop(ev) { //allwDrop(ev): Permite que o elemento seja soltado.
             ev.preventDefault(); // Previne o comportamento padrão do evento para permitir arrastar e soltar
@@ -33,9 +33,25 @@
 </head>
 
 <body>
+    <!-- Primeira div que serve como área de "drop" -->
+    <!-- ondrop chama a função drop(event) quando o item é solto na div -->
+    <!-- ondragover chama a função allwDrop(event) para permitir que o item seja solto nesta div -->
     <div id="div1" ondrop="drop(event)" ondragover="allwDrop(event)"></div>
-    <br>
+
+    <br><!-- Quebra de linha para espaçamento visual -->
+
+    <!-- Imagem que pode ser arrastada -->
+    <!-- id="drag1" identifica o elemento que será arrastado -->
+    <!-- src define o caminho da imagem a ser exibida (neste caso, uma imagem de cachorro) -->
+    <!-- draggable="true" indica que o elemento pode ser arrastado -->
+    <!-- ondragstart chama a função drag(event) quando o arraste da imagem começa -->
+    <!-- width define a largura da imagem em pixels -->
+    <!-- alt é o texto alternativo, exibido se a imagem não for carregada -->
     <img id="drag1" src="imagem/download.jpeg" draggable="true" ondragstart="drag(event)" width="100px" alt="cachorro">
+
+    <!-- Segunda div que também serve como área de "drop" -->
+    <!-- ondrop chama a função drop(event) quando o item é solto na div -->
+    <!-- ondragover chama a função allwDrop(event) para permitir que o item seja solto nesta div -->
     <div id="div2" ondrop="drop(event)" ondragover="allwDrop(event)"></div>
 
 </body>
