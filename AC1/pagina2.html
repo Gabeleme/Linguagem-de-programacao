@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalogo de produtos</title>
+</head>
+<style>
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        /* familia da fonte */
+    }
+
+    table {
+        border-collapse: collapse;
+        /* Remove os espaços entre as bordas */
+        width: 70%;
+        /* Define a largura da tabela */
+
+    }
+
+    th,
+    td {
+        border: 1px solid black;
+        /* Borda das células */
+        padding: 5px 8px;
+        /* Espaçamento interno */
+        text-align: left;
+        /* Alinhamento à esquerda */
+    }
+
+    tfoot td {
+        text-align: left;
+        /* Alinhado à esquerda */
+        padding: 4px;
+        /* Reduz o padding do rodapé */
+    }
+</style>
+
+<body>
+    <h1>Catálogo de produtos</h1>
+    <table>
+        <thead>
+            <tr>
+                <th></th>
+                <th>Foto</th>
+                <th>Código</th>
+                <th>Descrição</th>
+                <th>Qtde em estoque</th>
+                <th>Valor Unitário</th>
+            </tr>
+        </thead>
+        <tbody> <!-- corpo da tabela -->
+            <tr> <!-- linha da tabela -->
+                <td><label><input type="checkbox"></label><br> </td> <!-- td = celula-->
+                <td><img src="img/Imagem1.jpg" alt="mouse"></td>
+                <td>1</td>
+                <td>Mouse Laser com fio Dell</td>
+                <td>5</td>
+                <td>R$ 179,00</td>
+            </tr>
+            <tr>
+                <td><label><input type="checkbox"></label><br> </td>
+                <td><img src="img/ImagemMouse2.jpg" alt=""></td>
+                <td>2</td>
+                <td>Mouse Bluetooth Dell</td>
+                <td>6</td>
+                <td>R$ 338,00</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><img src="img/Imagem3.jpg" alt="mouse"></td>
+                <td>3</td>
+                <td>Mouse óptico usb preto 100</td>
+                <td>3</td>
+                <td>R$ 48,30</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>Descrição</h2>
+    <h3>Características do Produto</h3>
+    <label for="Especificação">
+        <details>
+            <ul>
+                <li>Sensor óptico preciso com 1.600 DPI permite que você trabalhe na maioria das superfícies</li>
+                <li>Configuração USB rápida e fácil com cabo de 1,5m</li>
+                <li>Design ambidestro, produzido para caber de forma natural e perfeita na palma da sua mão</li>
+                <li>Três botões integrados</li>
+                <li>Ampla compatibilidade: Windows e Mac</li>
+            </ul>
+        </details>
+
+    </label>
+    <h3>Avaliação do produto</h3>
+    <dl>
+        <dt>José Aparecido</dt>
+        <dd>Muito bom</dd>
+        <dt>Joaquim Jorge</dt>
+        <dd>Bom</dd>
+    </dl>
+    <br>
+    <p>Clique <a href="index.html">AQUI</a> para voltar</p>
+</body>
+
+</html>
