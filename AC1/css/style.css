@@ -1,0 +1,62 @@
+/* . pra class */
+/* # pra id  */
+
+body, html {
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100%;
+    margin: 0;
+    
+}
+
+.menu_lateral {
+    height: 100%;
+    width: 20%;
+    background-color: rgba(152, 116, 185, 0.753);
+    float: left;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+   
+}
+
+.menu_lateral li a {
+    text-decoration: none !important;
+    color: rgba(0, 0, 0, 0.918);
+}
+
+
+.menu_lateral li a:hover {
+    text-decoration: none;
+    color: green;
+    text-shadow: 1px 2px 2px #ccc;
+}
+
+.menu_lateral li {
+    text-decoration: none !important;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.918);
+    list-style-type: none;
+}
+
+.bem_vindo{
+    width: 79%;
+    padding-left: 10px;
+    height: 100%;
+    background-color: rgba(150, 148, 148, 0.781);
+    position: relative;
+    display: flex;
+    /* flex-grow: 1; */
+    float: right;
+    top: 0;
+    bottom: 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.bem_vindo h1,
+.bem_vindo p {
+    text-align: center;
+}
+
