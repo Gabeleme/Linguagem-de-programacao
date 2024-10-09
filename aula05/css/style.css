@@ -1,4 +1,4 @@
-* {
+body, html{
     background-image: url(../img/kimetsu-no-yaiba.jpg);
     width: 100%;
     background-repeat: no-repeat;
@@ -8,5 +8,4 @@
     /* opacity: 0.3; */
     margin: 0px;
     position: fixed;
-    
 }
