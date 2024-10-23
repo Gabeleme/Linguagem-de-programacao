@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style_home.css">
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
     <link rel="shortcut icon" href="../img/favicon-pagina.ico" type="image/x-icon">
     <title>Game Store</title>
 </head>
@@ -22,17 +23,47 @@
             </button>
             <!-- inicio opções menu -->
             <ul id="menu" role="menu">
-                <li><a class="linkMenu" href="Home.html">Home</a></li>
-                <li><a class="linkMenu" href="Produto.html">Produto</a></li>
-                <li><a class="linkMenu" href="QuemSomos.html">Quem somos</a></li>
-                <li><a class="linkMenu" href="Contato.html">Contato</a></li>
-                <li><a class="linkMenu" href="Blog.html">Blog</a></li>
+                <li><a class="linkMenu" href="#">Home</a></li>
+                <li><a class="linkMenu" href="#">Produto</a></li>
+                <li><a class="linkMenu" href="#">Quem somos</a></li>
+                <li><a class="linkMenu" href="#">Contato</a></li>
+                <li><a class="linkMenu" href="#">Blog</a></li>
             </ul>
             <!-- Fim opções de Menu -->
         </nav>
     </header>
     <!-- Fim Menu -->
+
+    <!-- Carousel -->
+    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel" data-bs-pause="true">
+        <div class="carousel-inner" role="listbox">
+            <div class="carousel-item active" data-bs-interval="3000">
+                <img src="../img/imagem-jogo-homemAranha.png" class="d-block w-100" alt="">
+            </div>
+            <div class="carousel-item" data-bs-interval="1500">
+                <img src="../img/imagem_jogo_farcry6.png" class="d-block w-100" alt="">
+            </div>
+            <div class="carousel-item" data-bs-interval="1500">
+                <img src="../img/imagem_jogo_mortalKombat.png" class="d-block w-100" alt="">
+            </div>
+            <div class="carousel-item" data-bs-interval="1500">
+                <img src="../img/imagem_jogo_theLastOfUs.png" class="d-block w-100" alt="">
+            </div>
+        </div>
+        
+        <!-- Controle do carrossel -->
+        <button class="carousel-control-prev" data-bs-target="#carouselExampleInterval" type="button" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+        </button>
+        
+        <button class="carousel-control-next" data-bs-target="#carouselExampleInterval" type="button" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Próximo</span>
+        </button>
+    </div>
+    <!-- Fim do carrossel -->
 </body>
+<script type="text/javascript" src="../bootstrap/js/bootstrap.min.js"></script>
 
 </html>
-
