@@ -56,6 +56,8 @@ body, ul{
     justify-content: space-between; /* Distribui o conteúdo com espaçamento entre os elementos */
     background: #e7e7e7; /* Cor de fundo do header */
     box-shadow: 3px 3px 6px #b1b1b1; /* Sombra ao redor do header */
+    top: 0px;
+    
 }
 
 /* Estiliza o menu de navegação */
@@ -64,9 +66,30 @@ body, ul{
     list-style: none; /* Remove os marcadores de lista */
     gap: 0.8rem; /* Define o espaçamento entre os itens do menu */
     /* rem - unidade de medida relativa que varia de acordo com a dimensão do navegador */
+    z-index: 1000;
 }
 
 /* Esconde o botão móvel por padrão */
 #btn-mobile{
     display: none;
+}
+
+#carouselExampleInterval {
+    width: 500px;
+    height: auto; 
+    display: flex;
+    position: relative;
+    z-index: 100; /* garante que o carrousel esteja acima de outros elementos utilizando um número menor que o nosso #menu ficará atrás do menu   */
+    margin: 30px 0px 0px 30px;
+}
+
+.carousel-item {
+    max-height: 100%;
+    width: 50%;
+}
+
+.countainer {
+    align-items: center;
+    justify-content: center;
+    display: flex;
 }
