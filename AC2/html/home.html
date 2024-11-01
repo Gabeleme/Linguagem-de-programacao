@@ -12,13 +12,29 @@
 
 <body>
     <header>
+        <!--  => navbar Aplica estilos gerais de navegação
+              => navbar-expand-lg faz a navbar ser expansível em telas grandes 
+              => navbar-light aplica estilos de texto escuro em um fundo claro
+              => bg-light define o fundo da navbar como claro  -->
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container">
+            <div class="container"> <!-- Cria um contêiner que centraliza e alinha o conteúdo da navbar -->
                 <a class="navbar-brand" href="#"><img src="../img/logo3-semFundo.png" alt="logo" class="logo-home"></a>
+                <!-- navbar-brand é usada para estilizar o logotipo em uma barra de navegação, destacando-o -->
+                <!-- => nav-bar-toggler Classe que estiliza o botão que abre ou fecha a barra de navegação (menu).
+                     => data-toggle "collapse" Faz o botão funcionar para esconder ou mostrar o menu.
+                     => data-target "navbarNav" Indica qual parte do menu será escondida ou exibida quando o botão for clicado.
+                     => arial-controls"navbarNav" Melhora a acessibilidade, informando que o botão controla a parte do menu com o ID "navbarNav".
+                     => aria-expanded"false" Indica que o menu está escondido no início. O valor muda para "true" quando o menu é mostrado.
+                     => aria-label"Toggle navigation" Descreve a função do botão para usuários de leitores de tela, explicando que ele alterna a navegação.
+                     => navbar-toggler-icon gera o botão de icone no menu  -->
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
+                <!-- => collapse navbar-collapse é utilizada em uma barra de navegação do Bootstrap para permitir que o conteúdo da navbar seja colapsado em telas menores.
+                     => navbar-nav Classe que agrupa os itens de navegação dentro da navbar.
+                     => nav-item active indica que o item de navegação atual está ativo
+                     => nav-link estiliza os links de navegação na navbar, proporcionando uma aparência consistente e interativa. -->
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item active">
@@ -53,20 +69,38 @@
                         </li>
                     </ul>
 
+                    <!-- => d-flex aplica um layout flexível ao elemento, permitindo que seus filhos sejam dispostos em linha ou coluna
+                         => ms-auto aplica uma margem automática à esquerda do elemento, empurrando-o para a direita dentro de um contêiner flexível.
+                         => form-control estiliza elementos de formulário
+                         => me-2 aplica uma margem à direita do elemento, criando espaçamento entre ele e o próximo elemento.
+                         => btn aplica estilo a botões
+                         => btn-outline-success estiliza o botão com uma borda de cor verde e um fundo transparente, que se destaca ao passar o mouse.-->
                     <form class="d-flex ms-auto">
                         <input class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
                         <button class="btn btn-outline-success" type="submit">Buscar</button>
                     </form>
 
+                    <!-- => user-area area personalizada do usuario
+                         => ms-5 aplica margem a esquerda do elemento
+                         => d-flex aplica um layout flexível ao elemento
+                         => align-items-center alinha os itens filhos no centro do eixo transversal em um contêiner flexível
+                         => position-relative aplica um posicionamento relativo ao elemento
+                         => user-icon personaliza e estiliza o icone do ususario
+                         => me-2 aplica uma margem à direita do elemento
+                         => dropdown-toggle indica o elemento
+                         => ms-2 aplica margem a esquerda
+                         => dropdown-menu estiliza o contêiner do menu suspenso
+                         => dropdown-item estiliza cada item dentro do menu suspenso
+                         => Dropdown: (menu suspenso) é um elemento de interface do usuário que exibe uma lista de opções quando o usuário clica ou passa o mouse sobre ele
+                    -->
                     <div class="user-area ms-5 d-flex align-items-center position-relative">
                         <img src="../img/foto-perfil.jpeg" alt="ícone do usuário" class="user-icon me-2">
                         <span>Gabriela Oliveira</span>
-                        <button class="dropdown-toggle ms-2" id="user-dropdown" aria-expanded="false">
-                             <!-- Uma seta para baixo como botão de dropdown -->
-                        </button>
+                        <button class="dropdown-toggle ms-2" id="user-dropdown" aria-expanded="false"></button>
                         <div class="dropdown-menu" id="user-options" style="display: none;">
                             <a class="dropdown-item" href="#">Perfil</a>
                             <a class="dropdown-item" href="#">Configurações</a>
+                            <a class="dropdown-item" href="#">Meus Cursos</a>
                             <a class="dropdown-item" href="#">Sair</a>
                         </div>
                     </div>
@@ -76,6 +110,19 @@
     </header>
     <main>
         <div class="countainer">
+            <!-- 
+                => carousel: define o elemento como um carrossel 
+                => slide: aplica a transição em slide entre os itens do carrossel 
+                => data-bs-ride="carousel": atributo que ativa o carrossel para iniciar automaticamente 
+                => carousel-inner: contêiner que agrupa os itens do carrossel 
+                => carousel-item: define cada item dentro do carrossel 
+                => active: indica o item atualmente ativo exibido 
+                => data-bs-interval: atributo que define o tempo em milissegundos que o item ficará visível antes de mudar 
+                => d-block: classe do Bootstrap que define o item como um bloco, permitindo que a imagem ocupe toda a largura 
+                => w-100: classe do Bootstrap que faz a imagem ocupar 100% da largura do contêiner 
+                => carousel-caption: contêiner para a legenda do carrossel que aparece sobre a imagem 
+                => btn: aplica estilo ao botão
+                => btn-custom: estilizar o botão de forma específica -->
             <!-- Carousel -->
             <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner" role="listbox">
@@ -108,6 +155,18 @@
                     </div>
                 </div>
 
+                <!-- 
+                => carousel-control-prev: classe que estiliza o botão de controle para avançar para o item anterior do carrossel 
+                => data-bs-target="#carouselExampleInterval": atributo que define o ID do carrossel que será controlado por este botão 
+                => type="button": define o tipo do botão como "button"
+                => data-bs-slide="prev": atributo que indica que o botão deve mover o carrossel para o item anterior 
+                => carousel-control-prev-icon:  aplica o ícone de controle para o botão anterior 
+                => visually-hidden: esconde visualmente o texto "Anterior" para leitores de tela, mas mantém o texto acessível para a acessibilidade 
+                => carousel-control-next: estiliza o botão de controle para avançar para o próximo item do carrossel 
+                => data-bs-slide="next": atributo que indica que o botão deve mover o carrossel para o próximo item 
+                => carousel-control-next-icon: aplica o ícone de controle para o botão próximo 
+                => visually-hidden: esconde visualmente o texto "Próximo" para leitores de tela, mas mantém o texto acessível para a acessibilidade -->
+
                 <!-- Controle do carrossel -->
                 <button class="carousel-control-prev" data-bs-target="#carouselExampleInterval" type="button"
                     data-bs-slide="prev">
@@ -123,12 +182,21 @@
             </div>
         </div>
         <!-- Fim do carrossel -->
+
         <br>
         <br>
         <br>
+        <!-- 
+            => container marketing: organizando os elementos em uma grade 
+            => row: cria uma linha flexível para conter as colunas 
+            => col-lg-4: define uma coluna com largura de 4 unidades em dispositivos grandes 
+            => text-center: centraliza o texto dentro da coluna 
+            => rounded-circle: aplica bordas arredondadas ao elemento, transformando a imagem em um círculo 
+            => width="140" height="140": define a largura e altura da imagem para 140 pixels 
+            => btn btn-secondary: aplicam estilos de botão e cor secundária ao link 
+            -->
         <div class="container marketing">
             <div class="row">
-                <!-- Primeira Coluna -->
                 <div class="col-lg-4 text-center">
                     <img src="../img/comunidade.jpeg" alt="Imagem Comunidade de Culinária" class="rounded-circle"
                         width="140" height="140">
@@ -137,7 +205,6 @@
                     <p><a href="#" class="btn btn-secondary">juntar-se a Comunidade</a></p>
                 </div>
 
-                <!-- Exemplo de outras colunas semelhantes -->
                 <div class="col-lg-4 text-center">
                     <img src="../img/video.jpeg" alt="Imagem Cursos Gratuitos" class="rounded-circle" width="140"
                         height="140">
@@ -155,7 +222,23 @@
                 </div>
             </div>
         </div>
+
         <br>
+
+        <!-- =>featurette-divider: linha horizontal que separa as diferentes featurettes
+            => row featurette: cria uma linha flexível para conter as colunas de cada featurette 
+            => col-md-7: classe que define uma coluna com largura de 7 unidades 
+            => featurette-heading: título principal da featurette
+            => lead: parágrafo que fornece uma descrição mais detalhada da featurette
+            => blockquote: elemento usado para citar um depoimento, com o atributo cite indicando uma citação 
+            => col-md-5: classe que define uma coluna com largura de 5 unidades 
+            => featurette-image: imagem da featurette, com classes que aplicam estilos para torná-la fluida e centralizada, além de bordas arredondadas 
+            => order-md-2: altera a ordem das colunas 
+            => depoimento: div que contém um depoimento de um aluno
+            => btn btn-custom: aplicam estilos de botão personalizado ao link para baixar material 
+            => btn-custom: link para ações 
+            
+            -->
         <div class="container">
             <hr class="featurette-divider">
             <!-- Primeira Featurette -->
@@ -232,18 +315,20 @@
             <hr class="featurette-divider">
         </div>
 
-
     </main>
 
-
-    <footer class="text-center py-4">
+    <!-- text-center: centraliza o texto -->
+    <footer class="text-center py-4"> 
         <p>&copy; 2024 Cursos de Culinaria. Todos os direitos reservados.</p>
         <p>Site desenvolvido Para estudos da Faculdade</p>
     </footer>
+
 </body>
-<script src="../js/script.js"></script>
-<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
-<script src="../bootstrap/js/bootstrap.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<script src="../js/script.js"></script> <!-- linka com meu arquivo js -->
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script> <!-- linka com a biblioteca JQuery -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script> <!-- linka com a biblioteca popper -->
+<script src="../bootstrap/js/bootstrap.min.js"></script> <!-- linka com o bootstrap -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> <!-- linka com outro bootstrap -->
+
 </html>

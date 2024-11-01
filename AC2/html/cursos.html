@@ -12,12 +12,28 @@
 
 <body>
     <header>
+         <!--  => navbar Aplica estilos gerais de navegação
+              => navbar-expand-lg faz a navbar ser expansível em telas grandes 
+              => navbar-light aplica estilos de texto escuro em um fundo claro
+              => bg-light define o fundo da navbar como claro  -->
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <!-- navbar-brand é usada para estilizar o logotipo em uma barra de navegação, destacando-o -->
+                <!-- => nav-bar-toggler Classe que estiliza o botão que abre ou fecha a barra de navegação (menu).
+                     => data-toggle "collapse" Faz o botão funcionar para esconder ou mostrar o menu.
+                     => data-target "navbarNav" Indica qual parte do menu será escondida ou exibida quando o botão for clicado.
+                     => arial-controls"navbarNav" Melhora a acessibilidade, informando que o botão controla a parte do menu com o ID "navbarNav".
+                     => aria-expanded"false" Indica que o menu está escondido no início. O valor muda para "true" quando o menu é mostrado.
+                     => aria-label"Toggle navigation" Descreve a função do botão para usuários de leitores de tela, explicando que ele alterna a navegação.
+                     => navbar-toggler-icon gera o botão de icone no menu  -->
             <div class="container">
                 <a class="navbar-brand" href="#"><img src="../img/logo3-semFundo.png" alt="logo" class="logo-home"></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
+                    <!-- => collapse navbar-collapse é utilizada em uma barra de navegação do Bootstrap para permitir que o conteúdo da navbar seja colapsado em telas menores.
+                     => navbar-nav Classe que agrupa os itens de navegação dentro da navbar.
+                     => nav-item active indica que o item de navegação atual está ativo
+                     => nav-link estiliza os links de navegação na navbar, proporcionando uma aparência consistente e interativa. -->
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
@@ -53,15 +69,47 @@
                         </li>
                     </ul>
 
-                    <form class="d-flex ms-auto">
-                        <input class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
-                        <button class="btn btn-outline-success" type="submit">Buscar</button>
-                    </form>
+                    <!-- => d-flex aplica um layout flexível ao elemento, permitindo que seus filhos sejam dispostos em linha ou coluna
+                         => ms-auto aplica uma margem automática à esquerda do elemento, empurrando-o para a direita dentro de um contêiner flexível.
+                         => form-control estiliza elementos de formulário
+                         => me-2 aplica uma margem à direita do elemento, criando espaçamento entre ele e o próximo elemento.
+                         => btn aplica estilo a botões
+                         => btn-outline-success estiliza o botão com uma borda de cor verde e um fundo transparente, que se destaca ao passar o mouse.-->
+                         <form class="d-flex ms-auto">
+                            <input class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
+                            <button class="btn btn-outline-success" type="submit">Buscar</button>
+                        </form>
+    
+                        <!-- => user-area area personalizada do usuario
+                             => ms-5 aplica margem a esquerda do elemento
+                             => d-flex aplica um layout flexível ao elemento
+                             => align-items-center alinha os itens filhos no centro do eixo transversal em um contêiner flexível
+                             => position-relative aplica um posicionamento relativo ao elemento
+                             => user-icon personaliza e estiliza o icone do ususario
+                             => me-2 aplica uma margem à direita do elemento
+                             => dropdown-toggle indica o elemento
+                             => ms-2 aplica margem a esquerda
+                             => dropdown-menu estiliza o contêiner do menu suspenso
+                             => dropdown-item estiliza cada item dentro do menu suspenso
+                             => Dropdown: (menu suspenso) é um elemento de interface do usuário que exibe uma lista de opções quando o usuário clica ou passa o mouse sobre ele
+                        -->
+                        <div class="user-area ms-5 d-flex align-items-center position-relative">
+                            <img src="../img/foto-perfil.jpeg" alt="ícone do usuário" class="user-icon me-2">
+                            <span>Gabriela Oliveira</span>
+                            <button class="dropdown-toggle ms-2" id="user-dropdown" aria-expanded="false"></button>
+                            <div class="dropdown-menu" id="user-options" style="display: none;">
+                                <a class="dropdown-item" href="#">Perfil</a>
+                                <a class="dropdown-item" href="#">Configurações</a>
+                                <a class="dropdown-item" href="#">Meus Cursos</a>
+                                <a class="dropdown-item" href="#">Sair</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </nav>
-    </header>
+            </nav>
+        </header>
     <main>
+
         <div class="container px-4 py-5" id="custom-cards">
             <h2 class="pb-2 border-bottom">Cursos</h2>
             <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
@@ -506,6 +554,7 @@
         <p>&copy; 2024 Cursos de Culinaria. Todos os direitos reservados.</p>
         <p>Site desenvolvido Para estudos da Faculdade</p>
     </footer>
+    
 </body>
 <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
