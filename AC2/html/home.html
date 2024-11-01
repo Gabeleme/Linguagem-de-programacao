@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css"> <!-- linka com o bootstrap -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" href="../img/faviconsite.ico" type="image/x-icon">
+    <title>Home</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="#"><img src="../img/logo3-semFundo.png" alt="logo" class="logo-home"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="home.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Sobre</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contato</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="cursos.html">Cursos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Eventos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Receitas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Material</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Desafios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Comunidade</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Faq</a>
+                        </li>
+                    </ul>
+
+                    <form class="d-flex ms-auto">
+                        <input class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
+                        <button class="btn btn-outline-success" type="submit">Buscar</button>
+                    </form>
+
+                    <div class="user-area ms-5 d-flex align-items-center position-relative">
+                        <img src="../img/foto-perfil.jpeg" alt="ícone do usuário" class="user-icon me-2">
+                        <span>Gabriela Oliveira</span>
+                        <button class="dropdown-toggle ms-2" id="user-dropdown" aria-expanded="false">
+                             <!-- Uma seta para baixo como botão de dropdown -->
+                        </button>
+                        <div class="dropdown-menu" id="user-options" style="display: none;">
+                            <a class="dropdown-item" href="#">Perfil</a>
+                            <a class="dropdown-item" href="#">Configurações</a>
+                            <a class="dropdown-item" href="#">Sair</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="countainer">
+            <!-- Carousel -->
+            <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner" role="listbox">
+                    <div class="carousel-item active" data-bs-interval="3000">
+                        <img src="../img/imagemComida01.jpg" class="d-block w-100" alt="">
+                        <div class="carousel-caption">
+                            <h5>Aprenda com Nossos Cursos Gratuitos</h5>
+                            <p>Aproveite a oportunidade de expandir seus conhecimentos com nossos cursos gratuitos de
+                                culinária. Inscreva-se agora e transforme sua paixão em habilidade!</p>
+                            <a href="cursos.html" class="btn btn-custom">Cursos</a>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="1800">
+                        <img src="../img/pexels-picsfast-8753550.jpg" class="d-block w-100" alt="">
+                        <div class="carousel-caption">
+                            <h5>Eventos de Culinária</h5>
+                            <p>Participe dos nossos workshops de culinária e aprenda a criar pratos maravilhosos.
+                                Junte-se a nós para uma jornada culinária divertida e educativa!</p>
+                            <a href="#" class="btn btn-custom">Participar</a>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="1800">
+                        <img src="../img/chefimagem.jpg" class="d-block w-100" alt="">
+                        <div class="carousel-caption">
+                            <h5>Conheça os Professores e Cursos</h5>
+                            <p>Descubra a paixão e a experiência dos nossos chefs e instrutores. Conheça os cursos que
+                                oferecemos e dê o próximo passo na sua jornada culinária!</p>
+                            <a href="#" class="btn btn-custom">Saiba Mais</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Controle do carrossel -->
+                <button class="carousel-control-prev" data-bs-target="#carouselExampleInterval" type="button"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+
+                <button class="carousel-control-next" data-bs-target="#carouselExampleInterval" type="button"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Próximo</span>
+                </button>
+            </div>
+        </div>
+        <!-- Fim do carrossel -->
+        <br>
+        <br>
+        <br>
+        <div class="container marketing">
+            <div class="row">
+                <!-- Primeira Coluna -->
+                <div class="col-lg-4 text-center">
+                    <img src="../img/comunidade.jpeg" alt="Imagem Comunidade de Culinária" class="rounded-circle"
+                        width="140" height="140">
+                    <h2>Comunidade de Culinária</h2>
+                    <p>Junte-se à Nossa Comunidade</p>
+                    <p><a href="#" class="btn btn-secondary">juntar-se a Comunidade</a></p>
+                </div>
+
+                <!-- Exemplo de outras colunas semelhantes -->
+                <div class="col-lg-4 text-center">
+                    <img src="../img/video.jpeg" alt="Imagem Cursos Gratuitos" class="rounded-circle" width="140"
+                        height="140">
+                    <h2>Vídeos Rápidos</h2>
+                    <p>Dicas Rápidas de Cozinha</p>
+                    <p><a href="#" class="btn btn-secondary">Assistir agora</a></p>
+                </div>
+
+                <div class="col-lg-4 text-center">
+                    <img src="../img/logo1_paginaDevendaDeCursosjpeg.jpeg" alt="Imagem Professores"
+                        class="rounded-circle" width="140" height="140">
+                    <h2>Desafios Semanais</h2>
+                    <p>Participe do Desafio da Semana</p>
+                    <p><a href="#" class="btn btn-secondary">Quero Participar</a></p>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="container">
+            <hr class="featurette-divider">
+            <!-- Primeira Featurette -->
+            <div class="row featurette">
+                <div class="col-md-7">
+                    <h2 class="featurette-heading">Aprenda com Chefs Renomados. <span class="text-muted"></span></h2>
+                    <p class="lead">Conheça nossos cursos, ministrados por profissionais com vasta experiência na
+                        culinária. Aprenda técnicas avançadas e receitas especiais que farão diferença em suas
+                        habilidades na cozinha.</p>
+                    <blockquote cite="Chef">
+                        <p>Professor e Chef Gustavo <br>
+                            Sou um especialista em culinária contemporânea com mais de 15 anos de experiência em
+                            cozinhas internacionais. Apaixonado pela fusão de sabores e técnicas, destaco-me por
+                            transformar ingredientes simples em pratos sofisticados e memoráveis. Além de liderar
+                            restaurantes premiados, sou conhecido por meu método de ensino prático e inspirador, sempre
+                            incentivando meus alunos a explorarem a criatividade e a técnica. Com uma abordagem
+                            cuidadosa e detalhada, compartilho segredos valiosos sobre preparo, apresentação e sabor,
+                            ajudando todos a elevarem suas habilidades na cozinha.</p>
+                    </blockquote>
+                </div>
+                <div class="col-md-5">
+                    <img src="../img/cozinheiro1menor.jpg" alt="Chef" class="featurette-image img-fluid mx-auto rounded"
+                        width="400" height="500">
+                </div>
+            </div>
+
+            <hr class="featurette-divider">
+
+            <!-- Segunda Featurette -->
+            <div class="row featurette">
+                <div class="col-md-7 order-md-2">
+                    <h2 class="featurette-heading">Materiais Exclusivos. <span class="text-muted"></span></h2>
+                    <p class="lead">Baixe apostilas, vídeos e materiais complementares que acompanham cada aula. Com
+                        esses recursos, você pode praticar a qualquer hora e em qualquer lugar.</p>
+                    <div class="depoimento">
+                        <h3>Depoimento de Aluno</h3>
+                        <p>"Fazer parte deste curso de culinária foi uma experiência transformadora! O material
+                            disponibilizado é incrível: as apostilas são bem elaboradas, com receitas detalhadas e dicas
+                            valiosas que realmente fazem a diferença. Além disso, os vídeos complementares são super
+                            úteis, pois me permitem revisar as técnicas a qualquer momento. Graças a esses recursos,
+                            consegui aprimorar minhas habilidades na cozinha e agora me sinto mais confiante para
+                            preparar pratos deliciosos. Recomendo a todos que desejam aprender e se aperfeiçoar na arte
+                            da culinária!"</p>
+                        <p>— <strong>Ana Souza</strong>, Aluna do Curso de Culinária</p>
+                    </div>
+                    <a href="#" class="btn btn-custom">Baixar Material</a>
+                </div>
+                <div class="col-md-5 order-md-1">
+                    <img src="../img/celularpng.png" alt="Chef" class="featurette-image img-fluid mx-auto rounded"
+                        width="500" height="500">
+                </div>
+            </div>
+
+            <hr class="featurette-divider">
+
+            <!-- Terceira Featurette -->
+            <div class="row featurette">
+                <div class="col-md-7">
+                    <h2 class="featurette-heading">Receitas Temáticas de Halloween<span class="text-muted"></span></h2>
+                    <p class="lead">Aproveitando que estamos na época mais assombrada do ano, aqui você pode encontrar
+                        algumas receitas legais e divertidas para fazer com seus filhos ou preparar para uma festa de
+                        Halloween incrível! Surpreenda a todos com pratos deliciosos que não apenas agradam ao paladar,
+                        mas também trazem toda a magia e o espírito desta festividade. Confira nossas sugestões e deixe
+                        sua criatividade fluir enquanto prepara essas delícias temáticas!.</p>
+                    <a href="#" class="btn btn-custom">Encontrar Receita</a>
+                </div>
+
+                <div class="col-md-5">
+                    <img src="../img/comidatematica.jpeg" alt="Chef" class="featurette-image img-fluid mx-auto rounded"
+                        width="400" height="500">
+                </div>
+            </div>
+
+            <hr class="featurette-divider">
+        </div>
+
+
+    </main>
+
+
+    <footer class="text-center py-4">
+        <p>&copy; 2024 Cursos de Culinaria. Todos os direitos reservados.</p>
+        <p>Site desenvolvido Para estudos da Faculdade</p>
+    </footer>
+</body>
+<script src="../js/script.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+<script src="../bootstrap/js/bootstrap.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</html>
