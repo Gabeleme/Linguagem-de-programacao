@@ -228,3 +228,7 @@ const numero = 4.7; console.log(Math.floor(numero)); // 4
 //Uso principal: Arredondar valores para inteiros.
 
 //================================================================
+
+// Gabriela Cristina Leme de Oliveira
+// RA: 236821
+// RA em Hexadecimal: 0x39D15
